@@ -87,7 +87,7 @@ function updateMap(data) {
         <div style="padding: 6px;">
           <strong>Type:</strong> ${row.type}<br>
           <strong>Date:</strong> ${row.date}<br>
-          <strong>Description:</strong><br>
+          <strong>Location:</strong><br>
           ${row.location_desc || 'N/A'}
         </div>
       </div>
