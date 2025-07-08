@@ -1,187 +1,32 @@
 ﻿latitude,longitude,date,type,location_desc
-43.890466,-78.88553054,2025-01-09,Property Damage,72 Cabot Street
-43.90592671,-78.82633475,2025-01-10,Pothole,King St E (at Keewatin)
-43.90204182,-78.86566965,2025-02-11,Slip and Fall,174 Simcoe St 
-43.8985374,-78.86741992,2025-02-11,Slip and Fall,81 Richmond Street West
-43.88305766,-78.80336648,2025-02-20,Property Damage,1011 Southgate Dr
-43.88411353,-78.86086754,2025-02-20,Pothole,Mill St 
-43.89787269,-78.86153483,2025-02-20,Property Damage,55 King Street East
-43.90153153,-78.87414635,2025-02-24,Slip and Fall,217 Adelaide Ave W
-43.89745189,-78.86609909,2025-02-25,Property Damage,12 Centre Street North
-43.89698947,-78.86382888,2025-02-26,Slip and Fall,16 Simcoe St S (Parking Lot)
-43.90370009,-78.83694202,2025-02-27,Pothole ,King St E from Farewell to Harmony Rd
-43.90370009,-78.83694202,2025-02-27,Pothole ,King St E from Farewell to Harmony Rd
-43.90370009,-78.83694202,2025-02-28,Pothole ,King St E from Wilson Road to Harmony Rd
-43.90007841,-78.85382008,2025-02-14,Property Damage ,272 King St East
-43.90370009,-78.83694202,2025-02-26,Pothole ,King St E from Farewell to Riverside
-43.89004763,-78.86232727,2024-12-11,Trip and Fall,Gibb St & Centre St S
-43.918318,-78.83774388,2025-02-13,Slip and Fall,Micawber St (east side)
-43.93532669,-78.88007743,2025-02-26,Property Damage,Simcoe St @ Cayuga Ave
-43.89452532,-78.88127953,2025-03-13,Pothole,Bond St W @ Fernhill Ave
-43.97991208,-78.85028739,2025-03-18,Pothole,Winchester Road East and Grandview Street North
-43.97991208,-78.85028739,2025-03-19,Pothole,Winchester Road East and Grandview Street North
-43.97991208,-78.85028739,2025-03-19,Pothole,Winchester Road East and Grandview Street North
-43.9332799,-78.84868372,2025-04-03,Sewer Back up,1087/1084/1080 Cascade Dr
-43.89721724,-78.8554835,2025-01-16,Slip and Fall,78 Drew St
-43.89199224,-78.85879929,2025-02-26,Property Damage ,233 Albert St
-43.93054496,-78.84573305,2025-03-06,Slip and Fall,Harmony Rd N South of Greystone Cr
-43.9653579,-78.89298186,2025-02-25,Slip and Fall,Bridle Rd @ Windfields Farms Dr
-43.93885914,-78.84894765,2025-02-02,Slip and Fall,Harmony Rd N South of Taunton Rd
-43.89749725,-78.86491217,2025-02-26,Slip and Fall,King St E @ Prince St
-43.95275354,-78.87462368,2025-04-25,Pothole,Conlin Road East just East of Ritson Rd N
-43.88066679,-78.86926093,2025-04-22,Trip and Fall,Park Rd S south of Cromwell Ave
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
+43.890466,-78.88553054,01/09/2025,Property Damage,72 Cabot Street
+43.90592671,-78.82633475,01/10/2025,Pothole,King St E (at Keewatin)
+43.90204182,-78.86566965,02/11/2025,Slip and Fall,174 Simcoe St 
+43.8985374,-78.86741992,02/11/2025,Slip and Fall,81 Richmond Street West
+43.88305766,-78.80336648,02/20/2025,Property Damage,1011 Southgate Dr
+43.88411353,-78.86086754,02/20/2025,Pothole on Bridge Deck,Mill St 
+43.89787269,-78.86153483,02/20/2025,Property Damage,55 King Street East
+43.90153153,-78.87414635,02/24/2025,Slip and Fall,217 Adelaide Ave W
+43.89745189,-78.86609909,02/25/2025,Property Damage,12 Centre Street North
+43.89698947,-78.86382888,02/26/2025,Slip and Fall,16 Simcoe St S (Parking Lot)
+43.90370009,-78.83694202,02/27/2025,Pothole ,King St E from Farewell to Harmony Rd
+43.90370009,-78.83694202,02/27/2025,Pothole ,King St E from Farewell to Harmony Rd
+43.90370009,-78.83694202,02/28/2025,Pothole ,King St E from Wilson Road to Harmony Rd
+43.90007841,-78.85382008,02/14/2025,Property Damage ,272 King St East
+43.90370009,-78.83694202,02/26/2025,Pothole ,King St E from Farewell to Riverside
+43.89004763,-78.86232727,12/11/2024,Trip and Fall,Gibb St & Centre St S
+43.918318,-78.83774388,02/13/2025,Slip and Fall,Micawber St (east side)
+43.93532669,-78.88007743,02/26/2025,Property Damage,Simcoe St @ Cayuga Ave
+43.89452532,-78.88127953,03/13/2025,Pothole,Bond St W @ Fernhill Ave
+43.97991208,-78.85028739,03/18/2025,Pothole,Winchester Road East and Grandview Street North
+43.97991208,-78.85028739,03/19/2025,Pothole,Winchester Road East and Grandview Street North
+43.97991208,-78.85028739,03/19/2025,Pothole,Winchester Road East and Grandview Street North
+43.9332799,-78.84868372,04/03/2025,Sewer Back up,1087/1084/1080 Cascade Dr
+43.89721724,-78.8554835,01/16/2025,Slip and Fall,78 Drew St
+43.89199224,-78.85879929,02/26/2025,Property Damage ,233 Albert St
+43.93054496,-78.84573305,03/06/2025,Slip and Fall,Harmony Rd N South of Greystone Cr
+43.9653579,-78.89298186,02/25/2025,Slip and Fall,Bridle Rd @ Windfields Farms Dr
+43.93885914,-78.84894765,02/02/2025,Slip and Fall,Harmony Rd N South of Taunton Rd
+43.89749725,-78.86491217,02/26/2025,Slip and Fall,King St E @ Prince St
+43.95275354,-78.87462368,04/25/2025,Pothole,Conlin Road East just East of Ritson Rd N
+43.88066679,-78.86926093,04/22/2025,Trip and Fall,Park Rd S south of Cromwell Ave
