@@ -23,6 +23,7 @@ const markerClusterGroup = L.markerClusterGroup({
 map.addLayer(markerClusterGroup);
 
 let allData = [];
+let currentYear = '2026'; // NEW: track current year
 
 // Load Oshawa boundary GeoJSON and add to map
 fetch('oshawa_boundary.geojson')
@@ -43,17 +44,36 @@ fetch('oshawa_boundary.geojson')
     }).addTo(map);
   });
 
-// Load claims CSV data using PapaParse
-Papa.parse('claims_2025.csv', {
-  header: true,
-  download: true,
-  complete: (results) => {
-    allData = results.data.filter(row => row.latitude && row.longitude);
-    updateMap(allData);
-  }
-});
+/* ===========================
+   NEW: Load data by year
+   =========================== */
+function loadYearData(year) {
+  currentYear = year;
 
-// Update map markers based on filtered data
+  const csvPath = `claims_${year}.csv`; // <-- if stored in /data/, use: `data/claims_${year}.csv`
+
+  // Optional: clear old markers + count immediately so user sees it changed
+  markerClusterGroup.clearLayers();
+  updateClaimCount(0);
+
+  Papa.parse(csvPath, {
+    header: true,
+    download: true,
+    skipEmptyLines: true,
+    complete: (results) => {
+      allData = results.data.filter(row => row.latitude && row.longitude);
+      applyFilters(); // IMPORTANT: reuse your existing filter logic
+    },
+    error: (err) => {
+      console.error(`Failed to load ${csvPath}`, err);
+      alert(`Could not load ${csvPath}. Check the file path/name in the repo.`);
+    }
+  });
+}
+
+/* ===========================
+   Update map markers based on filtered data
+   =========================== */
 function updateMap(data) {
   markerClusterGroup.clearLayers();
 
@@ -62,7 +82,7 @@ function updateMap(data) {
     const lon = parseFloat(row.longitude);
     if (isNaN(lat) || isNaN(lon)) return;
 
-    const typeKey = row.type.trim().toLowerCase();
+    const typeKey = (row.type || '').trim().toLowerCase();
     const color = typeColors[typeKey] || typeColors.other;
 
     const marker = L.marker([lat, lon], {
@@ -85,22 +105,23 @@ function updateMap(data) {
           Claim Details
         </div>
         <div style="padding: 6px;">
-          <strong>Type:</strong> ${row.type}<br>
-          <strong>Date:</strong> ${row.date}<br>
+          <strong>Type:</strong> ${row.type || 'N/A'}<br>
+          <strong>Date:</strong> ${row.date || 'N/A'}<br>
           <strong>Location:</strong><br>
-          ${row.location_desc || 'N/A'}
+          ${(row.location_desc || 'N/A')}
         </div>
       </div>
     `);
 
-
-
     markerClusterGroup.addLayer(marker);
   });
-   updateClaimCount(data.length);
+
+  updateClaimCount(data.length);
 }
 
-// Apply filters from inputs and update map
+/* ===========================
+   Apply filters from inputs and update map
+   =========================== */
 function applyFilters() {
   const startDateVal = document.getElementById('start-date').value;
   const endDateVal = document.getElementById('end-date').value;
@@ -132,9 +153,22 @@ function applyFilters() {
   updateMap(filtered);
 }
 
+/* ===========================
+   Events
+   =========================== */
 
 // Filter button event
 document.getElementById('filter-button').addEventListener('click', applyFilters);
+
+// NEW: year dropdown change
+document.getElementById('year-select').addEventListener('change', (e) => {
+  // Optional: wipe filters when switching years to avoid "empty" confusion
+  document.getElementById('start-date').value = '';
+  document.getElementById('end-date').value = '';
+  document.getElementById('type-select').value = '';
+
+  loadYearData(e.target.value);
+});
 
 function updateClaimCount(count) {
   const countDiv = document.getElementById('claim-count');
@@ -160,3 +194,9 @@ legend.onAdd = function () {
 };
 
 legend.addTo(map);
+
+// NEW: initial load (default to whatever your dropdown is set to)
+document.addEventListener('DOMContentLoaded', () => {
+  const yearSelect = document.getElementById('year-select');
+  loadYearData(yearSelect ? yearSelect.value : '2026');
+});
